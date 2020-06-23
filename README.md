@@ -9,37 +9,40 @@
 - belongs_to :group
 - belongs_to :user
 
-## groupテーブル
+## groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|name|text|null: false, foreign_key: true|
-
+|name|string|null: false|
+|message|references|null: false, foreign_key: true|
 
 ### Association
 - has_many : groups_users
 - has_many : users, through: :groups_users
+- has many : messages
 
-## userテーブル
+## usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|email|string|null: false|
+|email|unique|null: false|
 |password|string|null: false|
-|username|string|null: false|
-
+|name|unique|null: false|
+|messages|references|null: false, foreign_key: true|
 
 ### Association
 - has many : groups_users
-- has_many : group, thorugh: :groups_users
+- has_many : groups, thorugh: :groups_users
+- has many : messages
 
 ## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|image|string|null: false, foreign_key: true|
-|body|text|null: false, foreign_key: true|
+|image|string|
+|body|text|
+|group|references|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :user
-
+- belongs_to : user
+- belong_to : group
