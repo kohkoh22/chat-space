@@ -12,51 +12,53 @@
   height: 100vh;
   background-color: #253141;
 
-  .sidebar__username{
+  &__username{
     height: 100px;
     display: flex;
     align-items: center;
-    .sidebar__username--item{
+    &--item{
       height: 20px;
       width: 260px;
       margin: 0 20px;
       display: flex;
       justify-content: space-between;
-      .sidebar__username--item--left{
+      &--left{
         color: #ffffff;
         font-size: 16px;
         font-weight: bold;
       }
-      .sidebar__username--item--right{
+      &--right{
         width: 60px;
         display: flex;
         justify-content: flex-end;
-        .sidebar__btn{
+        .sidebar__btn--editing{
           text-decoration: none;
           color: #ffffff;
           margin-right: 0px;
-          .sidebar__btn--editing{
-            margin-right: 5px;
-          }
+        }
+        .sidebar__btn--setting{
+          text-decoration: none;
+        color: #ffffff;
+          margin-right: 5px;
         }
       }
     }
   }
 
-  .sidebar__grouplist{
+  &__grouplist{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     color: #ffffff;
     font-weight: bold;
 
-    .sidebar__grouplist--item{
+    &--item{
       
       padding: 20px 20px 40px 20px;
-      .sidebar__grouplist--item--groupname{
+      &--groupname{
         font-size: 15px;
         margin-bottom: 5px; 
       }
-      .sidebar__grouplist--item--message{
+      &--message{
         font-size: 11px;
       }
     }
@@ -68,26 +70,26 @@
   height: 100vh;
   background-color: #ffffff;
 
-  .mainchat__groupinfo{
+  &__groupinfo{
     height: 100px;
     display: flex;
     justify-content: space-between;
-    .mainchat__groupinfo--left{
+    &--left{
       margin-left: 40px;
-      .mainchat__groupinfo--left--top{
+      &--top{
         font-size: 20px;
         color: #333333;
         margin-top: 35px;
       }
-      .mainchat__groupinfo--left--bottom{
+      &--bottom{
         font-size: 12px;
         color: #999999;
         margin-top: 15px;
       }
     }
-    .mainchat__groupinfo--right{
+    &--right{
      
-      .mainchat__groupinfo--right--in{
+      &--in{
         margin-right: 40px;
         margin-top: 28px;
         border: 1px solid #38aef0;
@@ -105,25 +107,25 @@
     }
 
   }
-  .mainchat__messagelist{
+  &__messagelist{
     background-color: #fafafa;
     height: calc(100vh - 190px);
     padding-top: 35px;
-    .mainchat__messagelist--box{
+    &--box{
         margin-left: 40px;
-      .mainchat__messagelist--box--name{
+        &--name{
         display: flex;
-        .mainchat__messagelist--box--name--name {
+        &--name {
           color: #333333;
           font-size: 16px;
         }
-        .mainchat__messagelist--box--name--date {
+        &--date {
           color: #999999;
           font-size: 12px;
           margin-left: 15px;
         }
       }
-      .mainchat__messagelist--box--message{
+      &--message{
         color: #434a54;
         font-size: 14px;
         margin-top: 12px;
@@ -142,24 +144,24 @@
            width: 100%;
            display: flex;
            position: relative;
-           .form__typein{
+           &__formtypein{
              height: 50px;
              width: 100%;
              border-style: none;
              padding: 0 40px 0 10px;
              color: #434a54;
             }
-            .icon__image{
+            &__iconimage{
               cursor: pointer;
               position: absolute;
               top:10px;
               right:10px;
-              .file__image {
+              &--fileimage {
                display: none;
               }
             }
           }
-          .form__btn{
+          .formbtn{
             background-color: #38aef0;
             color: #fff;
             border-style: none;
