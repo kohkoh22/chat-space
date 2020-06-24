@@ -1,0 +1,38 @@
+.mainchat
+  .mainchat__groupinfo
+    .mainchat__groupinfo--left
+      .mainchat__groupinfo--left--top test
+      .mainchat__groupinfo--left--bottom Member : masa
+    .mainchat__groupinfo--right  
+      .mainchat__groupinfo--right--in
+        = link_to "#", class: "mainchat__btn" do 
+          Edit
+  .mainchat__messagelist
+    .mainchat__messagelist--box
+      .mainchat__messagelist--box--name
+        .mmainchat__messagelist--box--name--name masa
+        .mainchat__messagelist--box--name--date 2020/6/24(Wed)0:57:48
+      .mainchat__messagelist--box--message Hi
+      .mainchat__messagelist--box--name
+        .mmainchat__messagelist--box--name--name masa
+        .mainchat__messagelist--box--name--date 2020/6/24(Wed)0:57:48
+      .mainchat__messagelist--box--message Hi
+      .mainchat__messagelist--box--name
+        .mmainchat__messagelist--box--name--name masa
+        .mainchat__messagelist--box--name--date 2020/6/24(Wed)0:57:48
+      .mainchat__messagelist--box--message Hi
+      .mainchat__messagelist--box--name
+        .mmainchat__messagelist--box--name--name masa
+        .mainchat__messagelist--box--name--date 2020/6/24(Wed)0:57:48
+      .mainchat__messagelist--box--message Hi
+    
+  .form
+    %form.form__all
+      .input-box
+        %input{:placeholder => "Type a message", :type => "text", class:"input-box__formtypein"}
+        %label{class:"input-box__iconimage"}
+          = icon('fas', 'image')
+          %input{type: "file", class:"input-box__iconimage--fileimage"}
+      %input{ type: "submit", :value => "Send", class:"formbtn"}
+      
+
