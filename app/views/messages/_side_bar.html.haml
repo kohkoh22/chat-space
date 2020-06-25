@@ -1,12 +1,16 @@
 .sidebar 
   .sidebar__username
     .sidebar__username--item
+      %h3.sidebar__username--item--username
+        = current_user.name
       .sidebar__username--item--left masa
       .sidebar__username--item--right 
         = link_to "#", class: "sidebar__btn--editing" do
           = icon('far', 'edit')
-        = link_to "#", class: "sidebar__btn--setting" do
+        = link_to edit_user_path(current_user), class: "sidebar__btn--setting" do
           = icon('fas', 'cog')
+
+
   .sidebar__grouplist
     .sidebar__grouplist--item
       .sidebar__grouplist--item--groupname techcamp

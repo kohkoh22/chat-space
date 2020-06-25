@@ -22,6 +22,10 @@
       margin: 0 20px;
       display: flex;
       justify-content: space-between;
+      &--username{
+        font-weight: bold;
+        color: #ffffff;
+      }
       &--left{
         color: #ffffff;
         font-size: 16px;
