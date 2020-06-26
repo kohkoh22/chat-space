@@ -65,6 +65,10 @@
       &--message{
         font-size: 11px;
       }
+      a{
+        color: #ffffff;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -115,11 +119,11 @@
     background-color: #fafafa;
     height: calc(100vh - 190px);
     padding-top: 35px;
+    overflow: scroll;
     &--box{
         margin-left: 40px;
-        &--name{
         display: flex;
-        &--name {
+        &--name{
           color: #333333;
           font-size: 16px;
         }
@@ -130,12 +134,14 @@
         }
       }
       &--message{
-        color: #434a54;
-        font-size: 14px;
+        margin-left: 40px;
         margin-top: 12px;
         margin-bottom: 46px;
+        &--content{
+          color: #434a54;
+        font-size: 14px;
+        }
       }
-    }
   }
   .form{
         background-color:#d2d2d2;
