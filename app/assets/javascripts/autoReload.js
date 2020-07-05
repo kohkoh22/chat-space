@@ -44,8 +44,7 @@ $(function(){
     //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得
     let last_message_id = $('.mainchat__messagelist--box:last').data("message-id");
     let group_id = $(".mainchat__groupinfo--left--top").data("group-index");
-    console.log(last_message_id);
-    console.log(`/groups/${group_id}/api/messages`);
+    
     $.ajax({
       //ルーティングで設定した通り/groups/id番号/api/messagesとなるよう文字列を書く
       url: `/groups/${group_id}/api/messages`,
