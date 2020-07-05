@@ -72,8 +72,6 @@ $("#UserSearchResult").on('click', ".ChatMember__add", function(){
 });
 
 $(".ChatMembers").on('click', ".ChatMember__remove", function(){
-  // let userName = $(this).attr('data-user-name');
-  // let userId = $(this).attr('data-user-id');
   $(this).parent().remove();
   
 });
