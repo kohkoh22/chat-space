@@ -74,6 +74,8 @@ gem "haml-rails", ">= 1.0", '<= 2.0.1'
  gem 'carrierwave'
 gem 'mini_magick'
 
+gem 'fog-aws'
+
 gem 'jquery-rails'
 
 group :production do
