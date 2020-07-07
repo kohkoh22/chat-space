@@ -56,7 +56,8 @@ $(function(){
     })
     .done(function(data){
       let html = buildHTML(data);
-      $('.mainchat__messagelist').append(html);      
+      $('.mainchat__messagelist').append(html);
+      console.log(data)      
       $('form')[0].reset();
       $('.mainchat__messagelist').animate({ scrollTop: $('.mainchat__messagelist')[0].scrollHeight});
       $('.formbtn').prop('disabled', false);
